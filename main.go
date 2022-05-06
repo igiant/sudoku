@@ -23,7 +23,7 @@ var (
 )
 
 func (s *sudoku) loadFromFile(fileName string) error {
-	f, err := os.OpenFile(fileName, os.O_RDONLY, 0x555)
+	f, err := os.OpenFile(fileName, os.O_RDONLY, 0x444)
 	if err != nil {
 		return err
 	}
