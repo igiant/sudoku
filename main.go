@@ -160,7 +160,6 @@ func main() {
 		os.Exit(1)
 	}
 	fmt.Println(s)
-	err = s.solve()
 	if err = s.solve(); errors.Is(err, notSolved) {
 		fmt.Println(err)
 		os.Exit(2)
