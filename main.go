@@ -115,7 +115,7 @@ func (s sudoku) rowSep() string {
 	line := strings.Builder{}
 	line.WriteString("+")
 	for i := 0; i < len(s.field)/s.sizeArea; i++ {
-		line.WriteString(strings.Repeat("–", s.space*s.sizeArea*2-1) + "+")
+		line.WriteString(strings.Repeat("–", s.space*s.sizeArea+s.sizeArea-1) + "+")
 	}
 	return line.String()
 }
